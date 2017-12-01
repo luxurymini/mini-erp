@@ -1,4 +1,4 @@
-# 설치
+### 설치
 ** 최소버전 Node version >= 6.0 and NPM >= 3**
 
 ```
@@ -8,24 +8,24 @@ npm install
 npm start
 ```
 
-# 의존성 설치
+### 의존성 설치
 ```
 npm install --global electron, webpack, karma-cli, typescript
 ```
 
-# 빌드
+### 빌드
 ```
-# development
+### development
 npm run build:dev
 npm run build:prod
 npm run build:aot 
 ```
-# 런치
+### 빌드 실행
 ```
 npm run launch
 ```
 
-# 릴리스
+### 릴리스
 빌드 먼저 할것
 ```
 npm run package
@@ -34,15 +34,15 @@ npm run package:mac
 npm run package:windows
 ```
 
-# 의존성 메니져
+### 의존성 메니져
 ```
-# if you use yarn
+### if you use yarn
 yarn run install-app-deps
-# otherwise
+### otherwise
 npm run install-app-deps
 ```
 
-# 타입s
+### 타입s
 > When you include a module that doesn't include Type Definitions inside of the module you can include external Type Definitions with @types
 
 i.e, to have youtube api support, run this command in terminal: 
@@ -56,7 +56,7 @@ import '@types/gapi';
 import '@types/youtube';
 ```
 
-## Custom Type Definitions
+#### Custom Type Definitions
 When including 3rd party modules you also need to include the type definition for the module
 if they don't provide one within the module. You can try to install it with @types
 

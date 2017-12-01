@@ -1,14 +1,14 @@
 {
-  "extends": "./tsconfig",
-  "compilerOptions": {
-    "types": [
-      "jasmine",
-      "hammerjs",
-      "node"
-    ]
-  },
-  "include": [
-    "src/*.d.ts",
-    "src/**/**.spec.ts"
-  ]
+	"extends": "./tsconfig",
+	"compilerOptions": {
+		"types": [
+			"jasmine",
+			"hammerjs",
+			"node"
+		]
+	},
+	"include": [
+		"src/*.d.ts",
+		"src/**/**.spec.ts"
+	]
 }

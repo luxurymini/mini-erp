@@ -6,14 +6,9 @@ import 'zone.js/dist/zone';
 declare const ENV: string;
 
 if ('production' === ENV) {
-  // Production
-
+	// Production
 } else {
+	Error.stackTraceLimit = Infinity;
 
-  // Development
-  Error.stackTraceLimit = Infinity;
-
-  /* tslint:disable no-var-requires */
-  require('zone.js/dist/long-stack-trace-zone');
-
+	require('zone.js/dist/long-stack-trace-zone');
 }

@@ -26,6 +26,15 @@ import { AppComponent } from './app.component';
 
 // components
 import { NoContentComponent } from './components/no-content/no-content.component';
+import { NaviComponent } from './shared/components/navi/navi.component';
+import { TitleComponent } from './shared/components/title/title.component';
+import { OptionComponent } from './shared/components/option/option.component';
+import { CalcTableComponent } from './components/calc-table/calc-table.component';
+import { TodayTableComponent } from './components/today-table/today-table.component';
+import { TodayListComponent } from './components/today-list/today-list.component';
+import { SubjectManagerComponent } from './components/subject-manager/subject-manager.component';
+import { SubjectSearcherComponent } from './components/subject-searcher/subject-searcher.component';
+import { SettingComponent } from './components/setting/setting.component';
 
 declare const ENV: string;
 
@@ -59,6 +68,15 @@ if (ENV === 'development') {
 	declarations: [
 		AppComponent,
 		NoContentComponent,
+		NaviComponent,
+		TitleComponent,
+		OptionComponent,
+		CalcTableComponent,
+		TodayTableComponent,
+		TodayListComponent,
+		SubjectManagerComponent,
+		SubjectSearcherComponent,
+		SettingComponent,
 	],
 	imports: [
 		BrowserModule,

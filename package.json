@@ -1,6 +1,6 @@
 {
-	"name": "t",
-	"productName": "t",
+	"name": "mini-erp",
+	"productName": "mini-erp",
 	"version": "1.0.0",
 	"license": "MIT",
 	"scripts": {
@@ -61,6 +61,7 @@
 	},
 	"dependencies": {
 		"electron-devtools-installer": "^2.2.0",
+		"forerunnerdb": "^2.0.13",
 		"rxjs": "~5.4.0"
 	},
 	"devDependencies": {
@@ -191,13 +192,6 @@
 			]
 		},
 		"asar": true
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/colinskow/angular-electron-dream-starter.git"
-	},
-	"bugs": {
-		"url": "https://github.com/colinskow/angular-electron-dream-starter/issues"
 	},
 	"engines": {
 		"node": ">= 6.0.0",

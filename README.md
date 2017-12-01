@@ -1,62 +1,46 @@
-### Quick start
-**Make sure you have Node version >= 6.0 and NPM >= 3**
+# Quick start
+** 최소버전 Node version >= 6.0 and NPM >= 3**
 
-```bash
+```
 git clone --depth 1 https://github.com/luxurymini/mini-erp.git
-
-cd 
-
+cd
 npm install
-
 npm start
-
-# Getting Started
-
-## Dependencies
-Once you have those, you should install these globals with `npm install --global`:
-* npm install --global electron, webpack, karma-cli, typescript
-
-## Installing
-* `fork` this repo
-* `clone` your fork
-* `npm install` to install all dependencies or `yarn`
-* `npm start` to start the development workflow
-
-## Building
-
-```bash
+```
+# Dependencies
+```
+npm install --global electron, webpack, karma-cli, typescript
+```
+# Installing
+```
+`fork` this repo
+`clone` your fork
+`npm install` to install all dependencies or `yarn`
+`npm start` to start the development workflow
+```
+# Building
+```
 # development
 npm run build:dev
-# production (jit)
 npm run build:prod
-# AoT
-npm run build:aot
+npm run build:aot 
 ```
-
-## Launching Your Build
-
-```bash
+# Launching Your Build
+```
 npm run launch
 ```
 
-## Generating Release Packages
-
-Make sure to build your app first. Application packages files will be generated inside the `/packages` directory.
-
-```bash
-# all platforms
+# Generating Release Packages
+빌드 먼저 할것
+```
 npm run package
-# Linux
 npm run package:linux
-# Mac
 npm run package:mac
-# Windows
 npm run package:windows
 ```
 
 # Managing Dependencies
-
-```bash
+```
 # if you use yarn
 yarn run install-app-deps
 # otherwise
@@ -109,6 +93,3 @@ If you're importing a module that uses Node.js modules which are CommonJS you ne
 ```typescript
 import * as _ from 'lodash';
 ```
-
-# License
- [MIT](/LICENSE)

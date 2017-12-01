@@ -9,9 +9,9 @@ let PROVIDERS: any[] = [
 declare const ENV: string;
 
 let _decorateModuleRef = <T>(value: T): T => value;
-
 if ('production' === ENV) {
 	enableProdMode();
+
 	// Production
 	_decorateModuleRef = (modRef: any) => {
 		disableDebugTools();
@@ -26,15 +26,18 @@ if ('production' === ENV) {
 	_decorateModuleRef = (modRef: any) => {
 		const appRef = modRef.injector.get(ApplicationRef);
 		const cmpRef = appRef.components[0];
-		const _ng = (window as any).ng;
+
+		let _ng = (window as any).ng;
 		enableDebugTools(cmpRef);
 		(window as any).ng.probe = _ng.probe;
 		(window as any).ng.coreTokens = _ng.coreTokens;
 		return modRef;
 	};
+
 	// Development
 	PROVIDERS = [
 		...PROVIDERS,
+		// custom providers in development
 	];
 }
 

@@ -1,4 +1,1 @@
-/*
- * Electron bootstraping
- */
 import './electron';

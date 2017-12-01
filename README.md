@@ -1,4 +1,4 @@
-# Quick start
+# 설치
 ** 최소버전 Node version >= 6.0 and NPM >= 3**
 
 ```
@@ -7,30 +7,25 @@ cd
 npm install
 npm start
 ```
-# Dependencies
+
+# 의존성 설치
 ```
 npm install --global electron, webpack, karma-cli, typescript
 ```
-# Installing
-```
-`fork` this repo
-`clone` your fork
-`npm install` to install all dependencies or `yarn`
-`npm start` to start the development workflow
-```
-# Building
+
+# 빌드
 ```
 # development
 npm run build:dev
 npm run build:prod
 npm run build:aot 
 ```
-# Launching Your Build
+# 런치
 ```
 npm run launch
 ```
 
-# Generating Release Packages
+# 릴리스
 빌드 먼저 할것
 ```
 npm run package
@@ -39,7 +34,7 @@ npm run package:mac
 npm run package:windows
 ```
 
-# Managing Dependencies
+# 의존성 메니져
 ```
 # if you use yarn
 yarn run install-app-deps
@@ -47,7 +42,7 @@ yarn run install-app-deps
 npm run install-app-deps
 ```
 
-# Types
+# 타입s
 > When you include a module that doesn't include Type Definitions inside of the module you can include external Type Definitions with @types
 
 i.e, to have youtube api support, run this command in terminal: 
